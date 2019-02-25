@@ -10,3 +10,7 @@ export interface NumberObject {
 }
 
 export type DataArray = NumberObject[];
+
+export interface GroupedDataObject {
+    [key: string]: Array<{name: number | string, value: number}>;
+}

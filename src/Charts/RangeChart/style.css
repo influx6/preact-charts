@@ -1,5 +1,0 @@
-.brush {}
-
-.brush > :global(rect.handle) {
-    fill: darkgoldenrod;
-}
