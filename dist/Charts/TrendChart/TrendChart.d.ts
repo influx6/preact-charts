@@ -1,6 +1,5 @@
 import { Component } from 'preact';
-import { Margin } from '../../types';
-import { TimestampArray } from '../../../dashboard-conc/types';
+import { Margin, TimestampArray } from '../../types';
 interface TrendChartProps {
     name: string;
     height?: number;
@@ -14,6 +13,15 @@ interface TrendChartProps {
     tooltip?: boolean;
     axisControl?: boolean;
 }
+interface TrendChartDefaultProps {
+    height: number;
+    width: number;
+    margin: Margin;
+    lineColour: string;
+    extent: Date[];
+    tooltip: boolean;
+    axisControl: boolean;
+}
 interface TrendChartState {
     height: number;
     width: number;
@@ -25,7 +33,7 @@ interface TrendChartState {
     yDomain: number[];
 }
 export declare class TrendChart extends Component<TrendChartProps, TrendChartState> {
-    static defaultProps: TrendChartProps;
+    static defaultProps: TrendChartDefaultProps;
     private chartSVG;
     private resizeOb;
     private xScale;

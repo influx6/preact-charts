@@ -11,6 +11,12 @@ interface DiffBarProps {
     margin?: Margin;
     ticks?: number;
 }
+interface DiffBarDefaultProps {
+    height: number;
+    width: number;
+    margin: Margin;
+    ticks: number;
+}
 interface DiffBarState {
     width: number;
     innerWidth: number;
@@ -18,7 +24,7 @@ interface DiffBarState {
     innerHeight: number;
 }
 export declare class DifferenceChart extends Component<DiffBarProps, DiffBarState> {
-    static defaultProps: DiffBarProps;
+    static defaultProps: DiffBarDefaultProps;
     private chartSVG;
     private resizeOb;
     constructor(props: DiffBarProps);

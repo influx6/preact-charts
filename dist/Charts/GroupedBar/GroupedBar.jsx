@@ -1,8 +1,8 @@
 import { Component } from 'preact';
 import { Axis } from '../../Axis';
 import { scaleLinear, scaleBand, scaleOrdinal } from 'd3-scale';
-import { max } from '../../../utilities/simpleStats';
-import { pluckUnique } from '../../../utilities/pluck';
+import { max } from 'd3-array';
+import { pluckUnique } from '../../Utils/pluck';
 import { colourArray } from '../../colors';
 export class GroupedBar extends Component {
     constructor(props) {
@@ -25,7 +25,7 @@ export class GroupedBar extends Component {
     render({ margin, ticks, data, groups, legendReference, name }, { height, width, innerHeight, innerWidth }) {
         let yMax = 0;
         for (const key of groups) {
-            const groupMax = max(data[key], 'value');
+            const groupMax = max(data[key], (d) => d.value);
             yMax = groupMax > yMax ? groupMax : yMax;
         }
         const names = pluckUnique(data[groups[0]], 'name');
@@ -87,7 +87,6 @@ export class GroupedBar extends Component {
     }
 }
 GroupedBar.defaultProps = {
-    name: 'groupedbar',
     height: 500,
     width: 500,
     margin: {
@@ -96,9 +95,6 @@ GroupedBar.defaultProps = {
         bottom: 75,
         left: 50,
     },
-    data: {},
-    groups: [],
     ticks: 6,
-    legendReference: {},
 };
 //# sourceMappingURL=GroupedBar.jsx.map

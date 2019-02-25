@@ -1,11 +1,5 @@
 import { Component } from 'preact';
-import { Margin } from '../../types';
-export interface GroupedDataObject {
-    [key: string]: Array<{
-        name: number | string;
-        value: number;
-    }>;
-}
+import { Margin, GroupedDataObject } from '../../types';
 interface GroupedBarProps {
     name: string;
     data: GroupedDataObject;
@@ -18,6 +12,12 @@ interface GroupedBarProps {
     margin?: Margin;
     ticks?: number;
 }
+interface GroupedBarDefaultProps {
+    height?: number;
+    width?: number;
+    margin?: Margin;
+    ticks?: number;
+}
 interface GroupedBarState {
     width: number;
     innerWidth: number;
@@ -25,7 +25,7 @@ interface GroupedBarState {
     innerHeight: number;
 }
 export declare class GroupedBar extends Component<GroupedBarProps, GroupedBarState> {
-    static defaultProps: GroupedBarProps;
+    static defaultProps: GroupedBarDefaultProps;
     private chartSVG;
     private resizeOb;
     constructor(props: GroupedBarProps);

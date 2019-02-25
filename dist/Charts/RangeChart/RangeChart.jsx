@@ -79,7 +79,6 @@ export class RangeChart extends Component {
     }
 }
 RangeChart.defaultProps = {
-    name: 'rangechart',
     height: 200,
     width: 1000,
     margin: {
@@ -88,8 +87,6 @@ RangeChart.defaultProps = {
         bottom: 75,
         left: 75,
     },
-    data: [],
-    y: '',
     lineColour: 'steelblue',
     fillColour: 'steelblue',
     onBrush: () => { },

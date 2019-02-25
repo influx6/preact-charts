@@ -18,6 +18,12 @@ interface HorizontalBarProps {
     margin?: Margin;
     ticks?: number;
 }
+interface HorizontalBarDefaultProps {
+    height?: number;
+    width?: number;
+    margin?: Margin;
+    ticks?: number;
+}
 interface HorizontalBarState {
     width: number;
     innerWidth: number;
@@ -25,7 +31,7 @@ interface HorizontalBarState {
     innerHeight: number;
 }
 export declare class HorizontalBar extends Component<HorizontalBarProps, HorizontalBarState> {
-    static defaultProps: HorizontalBarProps;
+    static defaultProps: HorizontalBarDefaultProps;
     private chartSVG;
     private resizeOb;
     constructor(props: HorizontalBarProps);

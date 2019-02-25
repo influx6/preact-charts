@@ -1,13 +1,20 @@
 import { Component } from 'preact';
-import { Margin } from '../../types';
-import { TimestampArray } from '../../../dashboard-conc/types';
+import { Margin, TimestampArray } from '../../types';
 interface RangeChartProps {
     name: string;
-    height: number;
-    width: number;
+    height?: number;
+    width?: number;
     margin?: Margin;
     y: string;
     data: TimestampArray;
+    lineColour?: string;
+    fillColour?: string;
+    onBrush?: (extent: Date[]) => void;
+}
+interface RangeChartDefaultProps {
+    height: number;
+    width: number;
+    margin?: Margin;
     lineColour?: string;
     fillColour?: string;
     onBrush?: (extent: Date[]) => void;
@@ -19,7 +26,7 @@ interface RangeChartState {
     innerHeight: number;
 }
 export declare class RangeChart extends Component<RangeChartProps, RangeChartState> {
-    static defaultProps: RangeChartProps;
+    static defaultProps: RangeChartDefaultProps;
     private brush;
     private brushSetup;
     private xScale;

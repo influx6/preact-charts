@@ -157,7 +157,6 @@ export class TrendChart extends Component {
     }
 }
 TrendChart.defaultProps = {
-    name: 'trendchart',
     height: 200,
     width: 1000,
     margin: {
@@ -166,9 +165,6 @@ TrendChart.defaultProps = {
         bottom: 75,
         left: 75,
     },
-    data: [],
-    x: '',
-    y: '',
     lineColour: 'lightblue',
     extent: [],
     tooltip: true,

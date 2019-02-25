@@ -2,7 +2,7 @@ import { Component } from 'preact';
 import { Axis } from '../../Axis';
 import { scaleLinear, scaleBand } from 'd3-scale';
 import { max } from 'd3-array';
-import { pluck } from '../../../utilities/pluck';
+import { pluck } from '../../Utils/pluck';
 export class DifferenceChart extends Component {
     constructor(props) {
         super(props);
@@ -69,7 +69,6 @@ export class DifferenceChart extends Component {
     }
 }
 DifferenceChart.defaultProps = {
-    name: 'diffbar',
     height: 800,
     width: 600,
     margin: {
@@ -78,7 +77,6 @@ DifferenceChart.defaultProps = {
         bottom: 50,
         left: 25,
     },
-    data: [],
     ticks: 8,
 };
 //# sourceMappingURL=DifferenceChart.jsx.map

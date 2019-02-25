@@ -1,8 +1,8 @@
 import { Component } from 'preact';
 import { Axis } from '../../Axis';
 import { scaleLinear, scaleBand, scaleOrdinal } from 'd3-scale';
-import { max } from '../../../utilities/simpleStats';
-import { pluckUnique } from '../../../utilities/pluck';
+import { max } from 'd3-array';
+import { pluckUnique } from '../../Utils/pluck';
 import { colourArray } from '../../colors';
 export class HorizontalBar extends Component {
     constructor(props) {
@@ -25,7 +25,7 @@ export class HorizontalBar extends Component {
     render({ margin, ticks, data, groups, name, legendReference }, { height, width, innerHeight, innerWidth }) {
         let xMax = 0;
         for (const key of groups) {
-            const groupMax = max(data[key], 'value');
+            const groupMax = max(data[key], (d) => d.value);
             xMax = groupMax > xMax ? groupMax : xMax;
         }
         const names = pluckUnique(data[groups[0]], 'name');
@@ -87,7 +87,6 @@ export class HorizontalBar extends Component {
     }
 }
 HorizontalBar.defaultProps = {
-    name: 'horizontalbar',
     height: 800,
     width: 600,
     margin: {
@@ -96,9 +95,6 @@ HorizontalBar.defaultProps = {
         bottom: 50,
         left: 150,
     },
-    data: {},
-    groups: [],
     ticks: 6,
-    legendReference: {},
 };
 //# sourceMappingURL=HorizontalBar.jsx.map

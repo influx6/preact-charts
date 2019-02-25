@@ -64,7 +64,6 @@ export class Histogram extends Component {
     }
 }
 Histogram.defaultProps = {
-    name: 'histogram',
     height: 250,
     width: 350,
     margin: {
@@ -73,8 +72,6 @@ Histogram.defaultProps = {
         bottom: 75,
         left: 50,
     },
-    x: '',
-    data: [],
     ticks: 8,
 };
 //# sourceMappingURL=Histogram.jsx.map

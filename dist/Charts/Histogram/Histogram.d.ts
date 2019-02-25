@@ -2,11 +2,17 @@ import { Component } from 'preact';
 import { DataArray, Margin } from '../../types';
 interface HistogramProps {
     name: string;
-    height: number;
-    width: number;
+    height?: number;
+    width?: number;
     margin?: Margin;
     x: string;
     data: DataArray;
+    ticks?: number;
+}
+interface HistogramDefaultProps {
+    height: number;
+    width: number;
+    margin: Margin;
     ticks: number;
 }
 interface HistogramState {
@@ -16,7 +22,7 @@ interface HistogramState {
     innerHeight: number;
 }
 export declare class Histogram extends Component<HistogramProps, HistogramState> {
-    static defaultProps: HistogramProps;
+    static defaultProps: HistogramDefaultProps;
     private chartSVG;
     private resizeOb;
     constructor(props: HistogramProps);
