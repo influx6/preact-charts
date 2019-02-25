@@ -1,0 +1,8 @@
+{
+  "name": "grouped-bar-chart-component",
+  "version": "0.0.1",
+  "description": "preact based, d3 math-ed grouped bar chart",
+  "main": "GroupedBar.tsx",
+  "author": "Peter Kroeker",
+  "license": "ISC"
+}

@@ -1,0 +1,60 @@
+.flag {
+    fill: gray;
+    stroke-width: 1;
+    stroke-opacity: 0.9;
+    fill-opacity: 0.45;
+    stroke: cornflowerblue;
+}
+
+.flag:hover {
+    fill: lightgray;
+}
+
+.topper {
+    fill: red;
+    fill-opacity: 1;
+}
+
+.topperClicked {
+    fill: lawngreen;
+    fill-opacity: 1;
+}
+
+.tooltipOverlay {
+    fill: none;
+    pointer-events: all;
+    border-top: none;
+    border-style: none;
+}
+
+.tooltipCircle {
+    fill: none;
+    stroke-width: 2;
+    stroke: gold;
+}
+
+.tooltipText {
+    stroke: whitesmoke;
+}
+
+.axisControl {
+    stroke: goldenrod;
+    text-anchor: middle;
+    user-select: none;
+    font-size: var(--font-size-larger);
+}
+.axisControlPlus {
+    cursor: pointer;
+    width: 12px;
+}
+.axisControlPlus:hover {
+    stroke: rgb(250, 223, 154);
+}
+.axisControlMinus {
+    cursor: pointer;
+    width: 12px;
+    transform: translate(0, 1em);
+}
+.axisControlMinus:hover {
+    stroke: rgb(250, 223, 154);
+}

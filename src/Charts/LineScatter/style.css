@@ -1,0 +1,8 @@
+.dot {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.label {
+    fill: whitesmoke;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "range-chart-component",
+  "version": "0.0.1",
+  "description": "preact based, d3 math-ed range chart",
+  "main": "RangeChart.tsx",
+  "author": "Peter Kroeker",
+  "license": "ISC"
+}

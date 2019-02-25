@@ -1,0 +1,8 @@
+{
+  "name": "line-connected-scatter-component",
+  "version": "0.0.1",
+  "description": "preact based, d3 math-ed line connected scatter plot chart",
+  "main": "LineScatter.tsx",
+  "author": "Peter Kroeker",
+  "license": "ISC"
+}

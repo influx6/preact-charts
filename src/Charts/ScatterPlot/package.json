@@ -1,0 +1,8 @@
+{
+  "name": "scatterplot-component",
+  "version": "0.0.1",
+  "description": "preact based, d3 math-ed scatter plot chart",
+  "main": "ScatterPlot.tsx",
+  "author": "Peter Kroeker",
+  "license": "ISC"
+}
