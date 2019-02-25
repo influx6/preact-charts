@@ -2,7 +2,7 @@
   "name": "preact-charts",
   "version": "0.0.1",
   "description": "Charting library built using preact with some small d3 dependencies",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "tsc"
   },
@@ -29,5 +29,6 @@
     "@types/d3": "^5.7.0",
     "tslint": "^5.12.0",
     "typescript": "^3.3.3"
-  }
+  },
+  "types": "./dist/types.d.ts"
 }
