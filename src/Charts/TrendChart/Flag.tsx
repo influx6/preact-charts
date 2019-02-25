@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import { ScaleTime } from 'd3-scale';
 import * as style from './style.css';
-import { EventsData } from '../../../dashboard-conc/types';
+import { EventsData } from '../../types';
 
 interface FlagProps extends EventsData {
     onClick: (flagID: number) => void;

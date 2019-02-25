@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import { Margin } from '../../types';
 import { Axis } from '../../Axis';
 import { scaleLinear, scaleBand, ScaleBand, ScaleLinear, scaleOrdinal, ScaleOrdinal } from 'd3-scale';
-import { max } from '../../../utilities/simpleStats';
-import { pluckUnique } from '../../../utilities/pluck';
+import { max } from 'd3-array';
+import { pluckUnique } from '../../Utils/pluck';
 import { colourArray } from '../../colors';
 
 declare const ResizeObserver: any;
@@ -68,7 +68,7 @@ export class HorizontalBar extends Component<HorizontalBarProps, HorizontalBarSt
         let xMax = 0;
 
         for (const key of groups) {
-            const groupMax = max(data[key], 'value');
+            const groupMax = max(data[key], (d) => d.value);
             xMax = groupMax > xMax ? groupMax : xMax;
         }
 

@@ -3,7 +3,7 @@ import { Margin } from '../../types';
 import { Axis } from '../../Axis';
 import { scaleLinear, scaleBand, ScaleBand, ScaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
-import { pluck } from '../../../utilities/pluck';
+import { pluck } from '../../Utils/pluck';
 
 declare const ResizeObserver: any;
 
