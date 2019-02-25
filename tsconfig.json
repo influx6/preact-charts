@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "target": "es2017",
+      "lib": [
+        "dom",
+        "esnext",
+        "esnext.array"
+      ],
+      "module": "esnext",
+      "moduleResolution": "node",
+      "strict": true,
+      "strictPropertyInitialization": false,
+      "strictNullChecks": false,
+      "removeComments": false,
+      "sourceMap": true,
+      "jsx": "preserve",
+      "experimentalDecorators": true,
+      "declaration": true
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+    ]
+}

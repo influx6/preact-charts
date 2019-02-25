@@ -1,0 +1,18 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "rules": {
+        "quotemark": [true, "single"],
+        "variable-name": [true, "allow-pascal-case"],
+        "ordered-imports": [false],
+        "space-before-function-paren": [true, "always"],
+        "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+        "curly": [true, "ignore-same-line"],
+        "only-arrow-functions": [false],
+        "interface-name": [true, "never-prefix"],
+        "object-literal-sort-keys": [false],
+        "no-empty": [true, "allow-empty-functions"]
+    }
+}
