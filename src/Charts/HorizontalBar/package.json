@@ -1,8 +1,0 @@
-{
-  "name": "horizontal-grouped-bar-chart-component",
-  "version": "0.0.1",
-  "description": "preact based, d3 math-ed horizontal grouped bar chart",
-  "main": "HorizontalBar.tsx",
-  "author": "Peter Kroeker",
-  "license": "ISC"
-}
