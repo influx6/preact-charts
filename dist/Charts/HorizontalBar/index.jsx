@@ -97,4 +97,4 @@ HorizontalBar.defaultProps = {
     },
     ticks: 6,
 };
-//# sourceMappingURL=HorizontalBar.jsx.map
+//# sourceMappingURL=index.jsx.map

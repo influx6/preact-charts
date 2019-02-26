@@ -1,6 +1,6 @@
 import { Component } from 'preact';
 import { scaleLinear, scaleTime } from 'd3-scale';
-import { Axis } from '../../Axis/Axis';
+import { Axis } from '../../Axis';
 import * as style from './style.css';
 import { area } from 'd3-shape';
 import { min, max } from 'd3-array';
@@ -91,4 +91,4 @@ RangeChart.defaultProps = {
     fillColour: 'steelblue',
     onBrush: () => { },
 };
-//# sourceMappingURL=RangeChart.jsx.map
+//# sourceMappingURL=index.jsx.map

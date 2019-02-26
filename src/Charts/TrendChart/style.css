@@ -34,7 +34,7 @@
 }
 
 .tooltipText {
-    stroke: whitesmoke;
+    stroke: var(--font-color-normal);
 }
 
 .axisControl {

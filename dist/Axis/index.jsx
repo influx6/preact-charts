@@ -49,4 +49,4 @@ Axis.defaultProps = {
     grid: false,
     rotateScaleText: false,
 };
-//# sourceMappingURL=Axis.jsx.map
+//# sourceMappingURL=index.jsx.map

@@ -5,7 +5,7 @@
 
 .axis>:global(.tick)>line {
     stroke-width: 1px;
-    stroke: var(--text-color-light);
+    stroke: var(--font-color-light);
     stroke-opacity: 0.5;
     shape-rendering: crispEdges;
 }

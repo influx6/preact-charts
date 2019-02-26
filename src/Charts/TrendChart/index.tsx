@@ -3,7 +3,7 @@ import { scaleLinear, scaleTime } from 'd3-scale';
 import { line } from 'd3-shape';
 import { bisector, extent } from 'd3-array';
 import { Margin, TimestampArray, TimestampData } from '../../types';
-import { Axis } from '../../Axis/Axis';
+import { Axis } from '../../Axis';
 import { Flag } from './Flag';
 import * as style from './style.css';
 

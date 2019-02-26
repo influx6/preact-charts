@@ -1,7 +1,7 @@
 import { h, Component } from 'preact';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import { Margin, TimestampArray, TimestampData } from '../../types';
-import { Axis } from '../../Axis/Axis';
+import { Axis } from '../../Axis';
 import * as style from './style.css';
 import { area } from 'd3-shape';
 import { min, max } from 'd3-array';

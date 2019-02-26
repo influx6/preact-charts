@@ -79,4 +79,4 @@ DifferenceChart.defaultProps = {
     },
     ticks: 8,
 };
-//# sourceMappingURL=DifferenceChart.jsx.map
+//# sourceMappingURL=index.jsx.map

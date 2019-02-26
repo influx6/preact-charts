@@ -97,4 +97,4 @@ GroupedBar.defaultProps = {
     },
     ticks: 6,
 };
-//# sourceMappingURL=GroupedBar.jsx.map
+//# sourceMappingURL=index.jsx.map

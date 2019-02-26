@@ -1,6 +1,6 @@
 .histogram_bar {
     fill: steelblue;
     fill-opacity: 1;
-    stroke: var(--text-color-normal);
+    stroke: var(--font-color-normal);
     stroke-width: 1px;
 }

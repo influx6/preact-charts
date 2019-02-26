@@ -2,7 +2,7 @@ import { Component, cloneElement } from 'preact';
 import { scaleLinear, scaleTime } from 'd3-scale';
 import { line } from 'd3-shape';
 import { bisector, extent } from 'd3-array';
-import { Axis } from '../../Axis/Axis';
+import { Axis } from '../../Axis';
 import * as style from './style.css';
 export class TrendChart extends Component {
     constructor(props) {
@@ -170,4 +170,4 @@ TrendChart.defaultProps = {
     tooltip: true,
     axisControl: true,
 };
-//# sourceMappingURL=TrendChart.jsx.map
+//# sourceMappingURL=index.jsx.map

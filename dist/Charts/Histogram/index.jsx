@@ -74,4 +74,4 @@ Histogram.defaultProps = {
     },
     ticks: 8,
 };
-//# sourceMappingURL=Histogram.jsx.map
+//# sourceMappingURL=index.jsx.map
