@@ -1,5 +1,6 @@
 # preact-charts
 ⚛️ preact based charting library. Written with d3-maths, and TypeScript!
+![npm](https://img.shields.io/npm/v/preact-charts.svg)
 
 ## Current Charts
 - Grouped Bar Chart
