@@ -1,6 +1,6 @@
 {
   "name": "preact-charts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Charting library built using preact with some small d3 dependencies",
   "main": "dist/library.js",
   "scripts": {
@@ -14,6 +14,13 @@
   ],
   "author": "Peter Kroeker",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmkroeker/preact-charts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmkroeker/preact-charts/issues"
+  },
   "dependencies": {
     "d3-array": "^2.0.3",
     "d3-axis": "^1.0.12",
