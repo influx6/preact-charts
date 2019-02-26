@@ -14,7 +14,8 @@
       "strictNullChecks": false,
       "removeComments": false,
       "sourceMap": true,
-      "jsx": "preserve",
+      "jsx": "react",
+      "jsxFactory": "h",
       "experimentalDecorators": true,
       "declaration": true
     },
