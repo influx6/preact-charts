@@ -9,3 +9,10 @@
 - ScatterPlot
 - RangeChart
 - TrendChart
+
+## Styling
+The included css modules use css variables to provide theme support. Below is a list of used variables.
+- `--font-color-normal`: Default font colour. Used for axis gridlines, histogram bar outlines, scatter plot labels, tooltip text.
+- `--font-size-normal`: Default font size. Used for axis text sizing.
+- `--font-size-larger`: Default larger text size. USed for trend chart axis control buttons.
+- `--background-color`: Default background colour. Used for scatter plot dot outlines.
