@@ -1,6 +1,6 @@
 {
   "name": "preact-charts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Charting library built using preact with some small d3 dependencies",
   "main": "dist",
   "module": "index.js",
@@ -13,8 +13,8 @@
     "preact",
     "d3"
   ],
-  "author": "Metrix",
-  "license": "ISC",
+  "author": "Peter Kroeker",
+  "license": "MIT",
   "dependencies": {
     "d3-array": "^2.0.3",
     "d3-axis": "^1.0.12",
