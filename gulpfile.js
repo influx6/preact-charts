@@ -5,9 +5,9 @@ const tsProject = ts.createProject('tsconfig.json');
 const merge = require('merge2');
 
 // gulp.task('default', function () {
-//     const tsResult = tsProject.src().pipe(tsProject());
+//     const tsResult = tsProject.src().pipe(sourcemaps.init()).pipe(tsProject());
 //     return merge([
-//         tsResult.js.pipe(gulp.dest('dist')),
+//         tsResult.js.pipe(sourcemaps.write('./')).pipe(gulp.dest('dist')),
 //         tsResult.dts.pipe(gulp.dest('dist')),
 //     ]);
 // });

@@ -1,8 +1,0 @@
-.dot {
-    stroke: var(--background-color);
-    stroke-width: 1px;
-}
-
-.label {
-    fill: var(--font-color-normal);
-}
