@@ -1,0 +1,9 @@
+.dot {
+    fill: #7dc7f4;
+    stroke: var(--background-color);
+    stroke-width: 1px;
+}
+
+.label {
+    fill: var(--font-color-normal);
+}
